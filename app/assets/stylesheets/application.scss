@@ -1,0 +1,45 @@
+@import "bootstrap";
+
+// *, *::before, *::after {
+//   -moz-box-sizing: border-box;
+//   -webkit-box-sizing: border-box;
+//   box-sizing: border-box;
+// }
+
+/* Navbar */
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #eeeeee;
+}
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color: #eeeeee;
+    border-color: #337ab7;
+}
+.navbar .navbar-brand {
+  color: #0275d8;
+}
+
+/* About Page */
+.about {
+  padding: 10px 0px 0px 20px;
+  width: 100%;
+  text-align: center;
+}
+.ion {
+  position: center;
+  font-size: 8rem;
+}
+.key-features, .about p {
+  color: #663399;
+}
+.key-features {
+  padding: 20px;
+}
+.col-sm-4 h2 {
+  color: #66CDAA;
+}
