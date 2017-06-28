@@ -11,6 +11,7 @@ gem 'jquery-rails'
 gem 'faker'
 gem 'figaro'
 gem 'devise'
+gem 'ionicons-rails', '~> 2.0'
 
 group :production do
   gem 'pg'
