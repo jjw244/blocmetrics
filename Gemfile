@@ -10,7 +10,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'faker'
 gem 'figaro'
-gem 'popper_js', '~> 1.9.9'
+gem 'devise'
 
 group :production do
   gem 'pg'
