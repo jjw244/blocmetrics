@@ -34,13 +34,13 @@ a, p, h2, h3, .new_user, .edit_user, .button_to {
   position: absolute;
 }
 
-/* About Page */
+/* Welcome Views */
 .about {
   padding: 20px 0px 0px 20px;
   width: 100%;
   text-align: center;
 }
-.ion {
+.about.ion {
   font-size: 8rem;
   padding: 20px
 }
@@ -74,4 +74,13 @@ a, p, h2, h3, .new_user, .edit_user, .button_to {
 }
 .show p.url, p.url a, p.app-info {
   padding: 0px;
+}
+.show a.ion {
+  font-size: 1.5rem;
+}
+.show h3 {
+  padding: 0;
+}
+.show td.count,  th.count {
+  text-align: center;
 }
