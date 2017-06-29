@@ -1,0 +1,21 @@
+<div class="container-fluid app index">
+  <div class="row">
+    <div class="col">
+      <h1>Registered Applications</h1>
+    </div>
+    <div class="col button">
+      <%= link_to "Register a New Application", new_registered_application_path, class: 'btn btn-success' %>
+    </div>
+  </div>
+  <div class="row app">
+  	<div class="col">
+  		<% if current_user.registered_applications.any? %>
+  			<% @regapps.each do |app| %>
+  				<h4><%= link_to app.name, app %></h4>
+  			<% end %>
+  		<% else %>
+  			<p>You have no registered applications at this time.</p>
+  		<% end %>
+  	</div>
+  </div>
+</div>

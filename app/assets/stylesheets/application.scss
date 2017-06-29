@@ -27,6 +27,7 @@ a, p, h2, h3, .new_user, .edit_user, .button_to {
 }
 .navbar .navbar-brand {
   color: #0275d8;
+  padding: 5px 0;
 }
 .navbar-text {
   padding: 20px 0 0 620px;
@@ -55,4 +56,22 @@ a, p, h2, h3, .new_user, .edit_user, .button_to {
 .about .row {
   margin: auto;
   padding-top: 90px;
+}
+
+/* Registered Application Views */
+.app {
+  padding: 20px 0 0 20px;
+}
+.index div.row.app {
+  padding: 1rem 0 0 0;
+}
+.index div.row.app a {
+  padding: 0;
+}
+.index div.col.button {
+  padding: .5rem 0 0 0;
+  text-align: center;
+}
+.show p.url, p.url a, p.app-info {
+  padding: 0px;
 }
