@@ -5,6 +5,8 @@
   		<p class="url"><%= link_to @regapp.url, "#{@regapp.url}" %></p>
   		<p class="app-info">Registered by: <%= @regapp.user.email %> | reporting since <%=@regapp.created_at.strftime("%B %d, %Y")%></p>
       <div class="col-8">
+        <%= pie_chart @regapp.events.group(:name).count %>
+        <%= line_chart @regapp.events.group_by_day(:created_at).count %>
         <table class="table table-striped">
           <thead class="thead-inverse">
             <tr>

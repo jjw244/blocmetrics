@@ -12,6 +12,8 @@ gem 'faker'
 gem 'figaro'
 gem 'devise'
 gem 'ionicons-rails', '~> 2.0'
+gem 'chartkick'
+gem 'groupdate'
 
 group :production do
   gem 'pg'
