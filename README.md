@@ -18,13 +18,14 @@ blocmetrics.report = function(eventName){
   request.send(JSON.stringify(event));
 };
 ```
-3  Add the following code inside the pages which you desire to keep track of. Place this code on the bottom. This example has the event name "About Page View". Please feel free to choose a name that best describes the page you are placing this code:
+3  Add the following javascript code to application.js.  This triggers an event everytime someone signs-up, .user-sign-up class was added to the sign-up link in application.html.erb.
 ex. js snippet:
 ```
-<script type="text/javascript">
-     $(document).on("ready page:load", function () {
-        blocmetrics.report("About Page");
-      })
-</script>
+$(document).on('turbolinks:load', function () {
+  $('.user_sign_up').click(function() {
+    console.log("testing");
+    blocmetrics.report("user signed up");
+  });
+});
 ```
 4  On Blocmetrics, under your registered application, you should see the events count change as your site gets viewed.
