@@ -101,7 +101,7 @@ GEM
     nokogiri (1.8.3)
       mini_portile2 (~> 2.3.0)
     orm_adapter (0.5.0)
-    pg (1.0.0)
+    pg (0.21.0)
     popper_js (1.12.9)
     pry (0.11.3)
       coderay (~> 1.1.0)
@@ -224,7 +224,7 @@ DEPENDENCIES
   groupdate
   ionicons-rails (~> 2.0)
   jquery-rails
-  pg
+  pg (~> 0.15)
   pry-rails
   rails (= 4.2.8)
   rails_12factor
@@ -241,4 +241,4 @@ RUBY VERSION
    ruby 2.3.4p301
 
 BUNDLED WITH
-   1.15.1
+   1.16.2
